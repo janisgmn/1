@@ -1,0 +1,49 @@
+//named functions
+const person = {
+	FirstName: 'Janis'
+	Last Name: 'Guaman'
+	age: 14,
+	gender: 'Female'
+	Country:'United States'
+	state: 'NJ'
+	city: "Union city"
+	pets: 'one'
+	getAddress: function() {
+		return this.country + ',' + this.state + ',' + this.city;
+	}
+};
+
+//local scope approach - pure functions
+function getFullName(firstName, lastName) {
+	return firstName +'' + lastName;
+}
+
+function getAge(age) {
+	return age;
+}
+
+function getGender(gender) {
+	return gender;
+}
+
+function getaddress(country,state,,city) {
+	return country + ', ' + state + ', ' + city;
+}
+
+function getPets(pets){
+	return pets;
+}
+
+getFUllName(person.firstName,person.lastName);
+getAge(person.Age);
+getGender(person.Gender);
+getAddress(person.Country,person.State,person.City);
+getPets(person.Pets);
+
+//Method approach
+person.getAddress();
+
+
+const name = 'Janis Guaman',
+
+name.tolowercase(); 
